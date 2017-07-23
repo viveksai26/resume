@@ -41,7 +41,7 @@ var bio = {
         }
 
     }
-}
+};
 bio.display();
 
 var education = {
@@ -86,7 +86,7 @@ var education = {
         $(".education-entry:last").append(FormattedAllOnline);
 
     }
-}
+};
 
 education.display();
 
@@ -119,7 +119,7 @@ var work = {
             $(".work-entry:last").append(completework);
         }
     }
-}
+};
 work.display();
 
 
@@ -138,13 +138,8 @@ var project = {
         var compproj = Formattedprojtitle + Formattedprojdates + Formattedprojdescription + Formattedprojimages1 + Formattedprojimages2;
         $(".project-entry").append(compproj);
     }
-}
+};
 project.display();
-
-
-
-
-name = bio.name;
 
 function inName(name) {
     var finalName = name;
@@ -153,7 +148,6 @@ function inName(name) {
     name[0] = name[0].toLowerCase();
     Finalname = name.join(" ");
     return Finalname;
-    console.log(Finalname);
 }
 
 $(document).click(function(loc) {
@@ -176,5 +170,5 @@ function foot() {
     $("#footerContacts").append([FomattedGithub]);
     var Fomattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
     $("#footerContacts").append([Fomattedlocation]);
-};
+}
 foot();
