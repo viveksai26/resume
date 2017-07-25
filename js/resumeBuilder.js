@@ -34,13 +34,13 @@ var bio = {
             var FormattedSkills = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(FormattedSkills);
         }
-        var FomattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+        FomattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         $("#footerContacts").append([FomattedMobile]);
-        var FomattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+        FomattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
         $("#footerContacts").append([FomattedEmail]);
-        var FomattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+        FomattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
         $("#footerContacts").append([FomattedGithub]);
-        var Fomattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        Fomattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
         $("#footerContacts").append([Fomattedlocation]);
     }
 };
